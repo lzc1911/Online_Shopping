@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2020-12-6 13:43:03 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="entity.UserProduct" optimistic-lock="version" schema="ROOT" table="USER_PRODUCT">
+    <id name="PIdent" type="string">
+      <column length="10" name="P_IDENT"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="id" type="string">
+      <column length="20" name="ID"/>
+    </property>
+    <property name="PName" type="string">
+      <column length="20" name="P_NAME"/>
+    </property>
+    <property name="PPrice" type="java.lang.Double">
+      <column name="P_PRICE" precision="52" scale="0"/>
+    </property>
+    <property name="PQuantity" type="java.lang.Integer">
+      <column name="P_QUANTITY"/>
+    </property>
+  </class>
+</hibernate-mapping>

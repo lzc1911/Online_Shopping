@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>check</title>
+    </h:head>
+    <h:body>
+        <h:form>
+<!--<h:commandButton value="selectAll" action="#{product.displayAll()}"/>-->
+            <h:dataTable  border="1" value="#{product.list}" var="pros">
+                <h:column>
+                    <f:facet name="header">
+                        P_NAME
+                    </f:facet>
+                    <h:outputText value="#{pros.PName}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        P_IDENT
+                    </f:facet>
+                    <h:outputText value="#{pros.PIdent}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        P_PRICE
+                    </f:facet>
+                    <h:outputText value="#{pros.PPrice}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                       P_QUANTITY
+                    </f:facet>
+                    <h:outputText value="#{pros.PQuantity}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        P_TIME
+                    </f:facet>
+                    <h:outputText value="#{pros.PTime}"/>
+                </h:column>
+            </h:dataTable>
+           <br/>
+           <h:commandButton value="return" action="index"/>
+        </h:form>
+    </h:body>
+</html>
+

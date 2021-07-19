@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Shopping Portal</title>
+    </h:head>
+    <h:body>
+        <style>
+   .a{background-color: #ccffff;
+        }.a{
+            width: 100%;
+            height: 80px;
+           position: relative;
+        }
+        .menu{
+         border-radius: 20px;
+         position: absolute;
+        top: 0px;
+        left: 0;
+        right: 50px;
+        bottom: 0;
+       }
+       
+       .menu ul li{
+           float: right;
+        
+  
+       }
+       .menu ul li a{
+           display: block;
+           text-align: center;
+           text-decoration: rgb(108, 109, 107);
+           width: 154px;
+           height: 50px;
+           color: black;
+           border-width: 1px solid black;
+           background: #ffccff;
+           line-height: 50px;
+           font-size: 15px;
+           transition:all 1s;
+           border-radius: 10px;
+       }
+       .menu ul li a:hover{
+        background-color: greenyellow;
+       }
+       .forml{
+        border-radius: 20px;
+         position: absolute;
+        margin-top: 1px;
+        margin-left: 0px;
+        border-radius: 20px;
+       }
+       
+        </style>
+    
+        <span>
+                <img src="../folder/tb.jpg" width="90" height="80"/>
+                </span>
+                <article class="menu">
+                        <ul>
+                       <li><a class="hide" href="gouwuche.xhtml">Shopping Cart</a>
+            
+                            </li>
+                            <li><a class="hide" href="yonghuzhuce.xhtml">User login</a>
+            
+                            </li>
+                            <li><a class="hide" href="abs.xhtml">Understand us</a>
+            
+                            </li>
+                            <li><a class="hide" href="index.xhtml">Home</a>
+            
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                    </article>
+        
+       <table border="1" bgcolor="white" align="top" width="100%" style="height:470px">
+            <tr>
+                <td bgcolor="white" align="center" width="20%" valign="top">
+                    <br/>    <br/>
+                    <h:form>
+                        <img alt="" src="../folder/08.png" width="300pt" height="400pt"/>
+                        <p>Welcome to shoping</p>
+                        <br/><br/><br/><br/><br/><br/><br/>
+                         购物数量选择：<br/>
+                       <h:inputText value="#{userProduct.PQuantity}"/><br/><br/><br/>
+                        <h:commandButton value="Add To Shopping Cart" action="#{userProduct.addCommit4()}"></h:commandButton>
+                        <br/><br/><br/>
+                       <h:commandButton value="Return" action="index.xhtml"></h:commandButton>
+                    </h:form>
+                    <br/>  <br/>  <br/>  <br/>
+                   
+                </td>
+                <!-- Page specific content starts here  -->
+                <td width="85%" valign="top" bgcolor="white">
+                    <p style="color: darkblue; font-size:20pt"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lenovo Tianyi</b><br/></p>
+                    <p style="font-size: 15pt">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Lenovo Tianyi 510S Mini desktop is very small in appearance, the volume is only 1L, almost a palm can be covered, even in a small space can also be easily placed, compared to the large size of the traditional desktop has better flexibility.It is worth mentioning that the top cover of Tianyi 510S Mini desktop uses the fabric material of grey and white, which looks very textured and can be easily integrated into the home or office environment. 
+                       <br/><br/><br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Core I5-10400 processor detection information
+                        In fact, tianyi 510S Mini desktop is equipped with the 10th generation Intel Core I5-10400 desktop-grade processor, with 6 core and 12 threads, base frequency of 2.9ghz, and the maximum single core core frequency of 4.3ghz. It can fully meet the needs of office and entertainment, and can even replace the laptop to become the main machine for daily office work
+                       <br/><br/><br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        In other features, the Tianyi 510S Mini desktop is equipped with 16GB DDR4 dual-channel memory, 256GB solid-state drive +2TB mechanical hard drive, and Wi-Fi 6 wireless network card.SSD+HDD dual hard disk scheme not only reduces the loading time of the application and speeds up the running speed of the system, but also takes into account the storage demand of large capacity. In addition, the capacity is enough for home or office use, so there is basically no need for later upgrade.
+                    </p>
+                    </td>
+                <!-- Page specific content ends here  -->
+            </tr>
+        </table>
+    </h:body>
+</html>
+

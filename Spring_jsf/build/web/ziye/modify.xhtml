@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <table border="1" align="center" width="80%" height="50"><h2 align="center">Modify product information</h2></table>
+        <table border="1" align="center" width="80%" height="200">
+            
+            <tr>
+                <td align="center"> pname:<h:inputText id="pname" value="#{product.PName}"/></td>
+            </tr>
+            <tr>
+                <td align="center"> pIdent:<h:inputText id="pIdent" value="#{product.PIdent}"/></td>
+            </tr>
+            <tr>
+                <td align="center"> pPrice:<h:inputText id="pPrice" value="#{product.PPrice}"/></td>
+            </tr>
+            <tr>
+                <td align="center"> pQuantity:<h:inputText id="pQuantity" value="#{product.PQuantity}"/></td>
+            </tr>
+            <tr>
+                <td align="center"> pTime:5<h:inputText id="pTime" value="#{product.PTime}"/></td>
+            </tr>
+            
+            <tr>
+                <td align="center"><h:commandButton id="commit" value="Modify information" action="#{product.modifyPro()}"/></td>
+            </tr>
+        </table>
+        </h:form>
+        <br/><br/><br/><br/>
+         <h:form>
+             <table border="1" align="center" width="80%" height="50"><h2 align="center">Modify user permissions</h2></table>
+             <table border="1" align="center" width="80%" height="200">
+            <tr>
+                <td align="center"> SIGN:<h:inputText id="sign" value="#{userAdm.sign}"/></td>
+            </tr>
+            <tr>
+                <td align="center"> userID:<h:inputText id="user" value="#{userAdm.id}"/></td>
+            </tr>
+            <tr>
+                <td align="center"><h:commandButton id="commit" value="Modify permissions" action="#{userAdm.modifyUser()}"/></td>
+            </tr>
+        </table>
+        </h:form>
+    </h:body>
+</html>
+

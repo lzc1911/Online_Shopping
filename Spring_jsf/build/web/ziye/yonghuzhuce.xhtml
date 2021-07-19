@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+   <h:head>
+      <title>Welcome</title>
+   </h:head>  
+    <style>
+         body {background-image: url("../folder/backgroud.png")}
+       body{text-align: center;}
+       h3{font-size: 55px;}
+      td1{font-size: 35px;}
+      td3{font-size: 35px;}
+     td5{height: max-content;}
+   input{height: 40px;}
+   input{width: 350px;}
+   input{color: blue;}
+   input  {background: rgba(255,255,255,0.5);color:black; }
+   input{font-size: 20px;}
+          </style>
+   <h:body>
+      <h:form>
+         <h3>Please enter your name and password.</h3>   
+         <table>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+            <tr>
+               <td1>&emsp;&nbsp; User_ID:</td1>
+               <h:inputText id="adm_id" value="#{userAdm.id}"   />
+               
+            </tr>
+             <br></br>                  
+            <tr>
+               <td3>&emsp;&nbsp;Password:</td3>
+               <td4><h:inputSecret value="#{userAdm.password}"/></td4>
+            </tr>
+         </table>
+        <br></br><br></br>&emsp;&emsp;&emsp;&emsp;; 
+        <td5>
+            <h:commandButton value="&emsp;&emsp;&emsp;&emsp;&emsp;logn &emsp;&emsp;&emsp;&emsp;&emsp;" action="#{userAdm.loginUser()}"  />
+            <h:commandButton value="&emsp;&emsp;&emsp;&emsp;&emsp;register &emsp;&emsp;&emsp;&emsp;&emsp;" action="register"  />
+        </td5>
+      </h:form>
+  
+   </h:body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <table border="1" align="center" width="80%" height="50"><h2 align="center">New products</h2></table>
+        <table border="1" align="center" width="80%" height="200">
+            
+            <tr>
+                <td align="center"> pname </td> <td><h:inputText id="pname" value="#{product.PName}"/></td>
+            </tr>
+            <tr>
+                <td align="center"> pIdent: </td> <td><h:inputText id="pIdent" value="#{product.PIdent}"/></td>
+            </tr>
+            <tr>
+                <td align="center"> pPrice </td> <td><h:inputText id="pPrice" value="#{product.PPrice}"/></td>
+            </tr>
+            <tr>
+                <td align="center"> pQuantity </td> <td><h:inputText id="pQuantity" value="#{product.PQuantity}"/></td>
+            </tr>
+            <tr>
+                <td align="center"> pTime </td> <td><h:inputText id="pTime" value="#{product.PTime}"/></td>
+            </tr>
+            
+            <tr>
+                <td></td><td><h:commandButton id="commit" value="AddNewProduct" action="#{product.addCommit()}"/></td>
+            </tr>
+        </table>
+        </h:form>
+    </h:body>
+</html>
+

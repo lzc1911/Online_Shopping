@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Shopping Portal</title>
+    </h:head>
+    <h:body>
+         <style>
+        .a{background-color: #ccffff;
+        }.a{
+            width: 100%;
+            height: 80px;
+           position: relative;
+        }
+        .menu{
+         border-radius: 20px;
+         position: absolute;
+        top: 0px;
+        left: 0;
+        right: 50px;
+        bottom: 0;
+       }
+       
+       .menu ul li{
+           float: right;
+        
+  
+       }
+       .menu ul li a{
+           display: block;
+           text-align: center;
+           text-decoration: rgb(108, 109, 107);
+           width: 154px;
+           height: 50px;
+           color: black;
+           border-width: 1px solid black;
+           background: #ffccff;
+           line-height: 50px;
+           font-size: 15px;
+           transition:all 1s;
+           border-radius: 10px;
+       }
+       .menu ul li a:hover{
+        background-color: greenyellow;
+       }
+       .forml{
+        border-radius: 20px;
+         position: absolute;
+        margin-top: 1px;
+        margin-left: 0px;
+        border-radius: 20px;
+    }
+        </style>
+        
+        <span>
+                <img src="../folder/tb.jpg" width="90" height="80"/>
+                </span>
+                <article class="menu">
+                        <ul>
+                    <li><a class="hide" href="gouwuche.xhtml">Shopping Cart</a>
+            
+                            </li>
+                            <li><a class="hide" href="yonghuzhuce.xhtml">User login</a>
+            
+                            </li>
+                            <li><a class="hide" href="abs.xhtml">Understand us</a>
+            
+                            </li>
+                            <li><a class="hide" href="index.xhtml">Home</a>
+            
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                    </article>
+        
+                  <table border="1" bgcolor="white" align="top" width="100%" style="height:470px">
+            <tr>
+                <td bgcolor="white" align="center" width="20%" valign="top">
+                    <br/>    <br/>
+                    <h:form>
+                        <img alt="" src="../folder/06.png" width="300pt" height="400pt"/>
+                        <p>Welcome to shoping</p>
+                        <br/><br/><br/><br/><br/><br/><br/>
+                         购物数量选择：<br/>
+                        <h:inputText value="#{userProduct.PQuantity}"/><br/><br/><br/>
+                        <h:commandButton value="Add To Shopping Cart" action="#{userProduct.addCommit3()}"></h:commandButton>
+                        <br/><br/><br/>
+                       <h:commandButton value="Return" action="index.xhtml"></h:commandButton>
+                    </h:form>
+                    <br/>  <br/>  <br/>  <br/>
+                   
+                </td>
+                <!-- Page specific content starts here  -->
+                <td width="85%" valign="top" bgcolor="white">
+                    <p style="color: darkblue; font-size:20pt"><b>&nbsp; &nbsp;&nbsp; &nbsp;Apple iphone 12</b><br/></p>
+                    <p style="font-size: 15pt">
+                        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;The iPhone 12 is an iPhone developed by Apple in the United States. 
+                        It features a face frame design, 5G support, A14 Bionic chip, and a dual-lens rear camera system.
+                        Support Beidou navigation, there are five colors: black, white, red, green and blue.
+                        
+                        <br/><br/>&nbsp; &nbsp;&nbsp; &nbsp;Super Retina XDR display with resolution of 2532x1170, contrast ratio of 2 million: 1, brightness up to 1200 nits, support Dolby vision and HDR10.
+                        <br/>&nbsp; &nbsp;&nbsp; &nbsp;Six core A14 Bionic chip is used.
+                        <br/>&nbsp; &nbsp;&nbsp; &nbsp;5G connections support more spectrum than any other smartphone.
+                        <br/>&nbsp; &nbsp;&nbsp; &nbsp;Dual lens rear camera system, with 12 megapixel super wide and wide Angle lens and 7 element lens, low light performance increase by 27%.
+                        <br/>&nbsp; &nbsp;&nbsp; &nbsp;Anti - fall performance improved by 4 times.
+                        
+                        <br/><br/>&nbsp; &nbsp;&nbsp; &nbsp;Antenna system
+                        &nbsp; &nbsp;A new antenna system is adopted to improve 5G performance.Apple said it has optimized iOS to take advantage of 5G speed while maintaining power efficiency.
+                        <br/><br/>&nbsp; &nbsp;&nbsp; &nbsp;Intelligent data
+                        &nbsp; &nbsp;The iPhone 12 has a smart data mode that intelligently switches between 4G and 5G data speeds.
+                        <br/>br/&nbsp; &nbsp;&nbsp; &nbsp;Front panel glass
+                        &nbsp; &nbsp;Apple uses a new cover finish on the front glass called "Super porcelain Crystal Face plate" to improve the durability and fall protection of the device by a factor of four.
+                        <br/><br/>&nbsp; &nbsp;&nbsp; &nbsp;camera
+                        &nbsp; &nbsp;Apple has updated the iPhone 12's camera system with a new 12-megapixel wide-angle camera with a wider aperture.
+                        <br/><br/>&nbsp; &nbsp;&nbsp; &nbsp;Wireless charging
+                        &nbsp; &nbsp;The iPhone 12 features MagSafe, which uses magnetic suction to enhance wireless charging.
+                         &nbsp; &nbsp;Cleaning instructions for iPhone 12 MagSafe Accessories: The MagSafe charger's built-in magnets may pick up debris during daily use.Please sweep away any debris from the metal ring before cleaning the fitting.Disconnect the MagSafe charger and use a slightly damp, lint-free soft cloth to wipe the silicone in the center of the charging area.Do not use window cleaners, household cleaners, sprays, solvents, ammonia, abrators, or cleaners containing hydrogen peroxide to clean MagSafe chargers.
+                         &nbsp; &nbsp; Copper phthalocyanine: the blue back of the iPhone12 lacks the glassy tint and has a plastic feel. Its color is related to the contrast of many plastic products. "plastic blue" is derived from copper phthalocyanine.
+                    </p>
+                    </td>
+                <!-- Page specific content ends here  -->
+            </tr>
+        </table>
+    </h:body>
+</html>
+

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Shopping Portal</title>
+    </h:head>
+    <h:body>
+                <style>
+   .a{background-color: #ccffff;
+        }.a{
+            width: 100%;
+            height: 80px;
+           position: relative;
+        }
+        .menu{
+         border-radius: 20px;
+         position: absolute;
+        top: 0px;
+        left: 0;
+        right: 50px;
+        bottom: 0;
+       }
+       
+       .menu ul li{
+           float: right;
+        
+  
+       }
+       .menu ul li a{
+           display: block;
+           text-align: center;
+           text-decoration: rgb(108, 109, 107);
+           width: 154px;
+           height: 50px;
+           color: black;
+           border-width: 1px solid black;
+           background: #ffccff;
+           line-height: 50px;
+           font-size: 15px;
+           transition:all 1s;
+           border-radius: 10px;
+       }
+       .menu ul li a:hover{
+        background-color: greenyellow;
+       }
+       .forml{
+        border-radius: 20px;
+         position: absolute;
+        margin-top: 1px;
+        margin-left: 0px;
+        border-radius: 20px;
+       }
+       
+        </style>
+        <span>
+                <img src="../folder/tb.jpg" width="90" height="80"/>
+                </span>
+                <article class="menu">
+                        <ul>
+                   <li><a class="hide" href="gouwuche.xhtml">Shopping Cart</a>
+            
+                            </li>
+                            <li><a class="hide" href="yonghuzhuce.xhtml">User login</a>
+            
+                            </li>
+                            <li><a class="hide" href="abs.xhtml">Understand us</a>
+            
+                            </li>
+                            <li><a class="hide" href="index.xhtml">Home</a>
+            
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                    </article>
+              <table border="1" bgcolor="white" align="top" width="100%" style="height:470px">
+            <tr>
+                <td bgcolor="white" align="center" width="20%" valign="top">
+                    <br/>    <br/>
+                    <h:form>
+                        <img alt="" src="../folder/15.png" width="300pt" height="400pt"/>
+                        <p>Welcome to shoping</p>
+                       <br/><br/><br/><br/><br/><br/><br/>
+                         购物数量选择：<br/>
+                      <h:inputText value="#{userProduct.PQuantity}"/><br/><br/><br/>
+                        <h:commandButton value="Add To Shopping Cart" action="#{userProduct.addCommit8()}"></h:commandButton>
+                        <br/><br/><br/>
+                       <h:commandButton value="Return" action="index.xhtml"></h:commandButton>
+                    </h:form>
+                    <br/>  <br/>  <br/>  <br/>
+                   
+                </td>
+                <!-- Page specific content starts here  -->
+                <td width="85%" valign="top" bgcolor="white">
+                    <p style="color: darkblue; font-size:20pt"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Playboy</b><br/></p>
+                    <p style="font-size: 15pt">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Playboy, founded in 1953, is a media conglomerate listed on the New York Stock Exchange. It publishes a variety of publications, including television and film businesses.In addition to being published in the United States, Playboy also publishes local editions in several countries.Despite fierce competition, its average circulation now stands at about 3.2 million, with about 10 million U.S. adults buying each month
+                         <br/><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         playboy
+                         Playboy (6 photos)
+                         Buy it.Twenty-five years ago, Playboy began exploring overseas markets. There are 19 editions worldwide, shared by 5 million (mostly male) readers in different countries.Playboy and its bunny logo have become one of the symbols of American culture.
+                         <br/><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         Founded in Illinois in 1953, the world-famous brand "Playboy" emphasizes the combination of modern fashion and traditional classics.Filled with a strong taste of leisure gentlemen, pleasing to the eye, popular around the world.
+                         <br/><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        The Playboy clothing line is led by Hugh Hefner, founder of Playboy Enterprises International, Inc.
+                        American "Playboy" brand from the beginning of the birth of high-end brand in 1953, gradually towards the populist line, from celebrities, politicians, down to ordinary consumers, everyone has a "Playboy", it has become one of the most popular brands in the world.In 1973, after the rapid development of the "Playboy" brand, the problem of unclear positioning gradually emerged, with the loss of high-end customers.In order to meet the needs of high-end consumers, founder Hugh Hefner has bred the VIP Playboy series and Playboy GOLF series on the basis of Playboy brand, which are famous in European and American markets for their fashionable styles, selected fabrics and top-notch workmanship.It is this creative spirit combined with the unique understanding of enjoying quality life that makes "American Playboy" brilliant today and full of imagination tomorrow.
+                        
+                    </p>
+                    </td>
+                <!-- Page specific content ends here  -->
+            </tr>
+        </table>
+    </h:body>
+</html>
+

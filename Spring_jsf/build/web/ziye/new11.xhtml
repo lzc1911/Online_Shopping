@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Shopping Portal</title>
+    </h:head>
+    <h:body>
+                <style>
+   .a{background-color: #ccffff;
+        }.a{
+            width: 100%;
+            height: 80px;
+           position: relative;
+        }
+        .menu{
+         border-radius: 20px;
+         position: absolute;
+        top: 0px;
+        left: 0;
+        right: 50px;
+        bottom: 0;
+       }
+       
+       .menu ul li{
+           float: right;
+        
+  
+       }
+       .menu ul li a{
+           display: block;
+           text-align: center;
+           text-decoration: rgb(108, 109, 107);
+           width: 154px;
+           height: 50px;
+           color: black;
+           border-width: 1px solid black;
+           background: #ffccff;
+           line-height: 50px;
+           font-size: 15px;
+           transition:all 1s;
+           border-radius: 10px;
+       }
+       .menu ul li a:hover{
+        background-color: greenyellow;
+       }
+       .forml{
+        border-radius: 20px;
+         position: absolute;
+        margin-top: 1px;
+        margin-left: 0px;
+        border-radius: 20px;
+       }
+       
+        </style>
+        <span>
+                <img src="../folder/tb.jpg" width="90" height="80"/>
+                </span>
+                <article class="menu">
+                        <ul>
+                       <li><a class="hide" href="gouwuche.xhtml">Shopping Cart</a>
+            
+                            </li>
+                            <li><a class="hide" href="yonghuzhuce.xhtml">User login</a>
+            
+                            </li>
+                            <li><a class="hide" href="abs.xhtml">Understand us</a>
+            
+                            </li>
+                            <li><a class="hide" href="index.xhtml">Home</a>
+            
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                    </article>
+              <table border="1" bgcolor="white" align="top" width="100%" style="height:470px">
+            <tr>
+                <td bgcolor="white" align="center" width="20%" valign="top">
+                    <br/>    <br/>
+                    <h:form>
+                        <img alt="" src="../folder/11.png" width="300pt" height="400pt"/>
+                        <p>Welcome to shoping</p>
+                        <br/><br/><br/><br/><br/><br/><br/>
+                         购物数量选择：<br/>
+                       <h:inputText value="#{userProduct.PQuantity}"/><br/><br/><br/>
+                        <h:commandButton value="Add To Shopping Cart" action="#{userProduct.addCommit6()}"></h:commandButton>
+                        <br/><br/><br/>
+                       <h:commandButton value="Return" action="index.xhtml"></h:commandButton>
+                    </h:form>
+                    <br/>  <br/>  <br/>  <br/>
+                   
+                </td>
+                <!-- Page specific content starts here  -->
+                <td width="85%" valign="top" bgcolor="white">
+                    <p style="color: darkblue; font-size:20pt"><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sharp</b><br/></p>
+                    <p style="font-size: 15pt">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Unique light transfer technology
+                        Sharp LCD TV is equipped with the unique light transmission technology UV2A of Sharp, which can precisely control the deflection direction of liquid crystal molecules, effectively improve the utilization rate of light and the opening rate of liquid crystal molecules, so that more light can pass through the liquid crystal panel, have more peak brightness, and make the white more clear and bright.At the same time, UV2A technology can accurately control the light through, effectively suppress the backlight leakage phenomenon, so that the black more deep and rich. 
+                        <br/><br/><br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Perfect sound
+                        Sharp's LCD has adopted the SRS TRRS TRUSURROUND HD technology, with Bass Enhancer technology.On the interface side, it is equipped with three sets of HDMI ports, which can satisfy the users' current and future digital HD external devices such as set-top boxes, game consoles, computers and digital cameras.In addition, it is equipped with a multi-function USB port, supporting a variety of video and audio files, greatly improving the user's audio-visual experience.
+                        <br/><br/><br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Extreme visual sense
+                        Sharp LCD TV with times FULL HD LCD drive technology, use with FULL HD LCD screen in 50 frames per second of animation image, usually between every two frame insert a frame, make the signal increase 2 times, namely to play at 100 frames per second, make the image more smooth, all-round improve picture residual, greatly reduce the picture trailing phenomenon, especially excellent hyperfine scene, bring more striking visual experience.
+                        
+                    </p>
+                    </td>
+                <!-- Page specific content ends here  -->
+            </tr>
+        </table>
+    </h:body>
+</html>
+
