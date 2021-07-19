@@ -1,0 +1,20 @@
+Mon Jul 19 15:01:52 CST 2021 : Apache Derby 网络服务器 - 10.11.1.2 - (1629631) 已启动并准备接受端口 1527 上的连接
+----------------------------------------------------------------
+Mon Jul 19 15:01:52 CST 2021:
+正在使用类加载程序 sun.misc.Launcher$AppClassLoader@6f94fa3e 引导数据库
+目录 C:\Users\lzc\Desktop\Online_Shopping\ku\Spring 中的 Derby 版本 The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631) 实例 a816c00e-017a-bd92-30ce-00000e664cd2
+已从 file:/C:/Program%20Files/Java/jdk1.8.0_111/db/lib/derby.jar 加载
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_111-b14
+user.dir=C:\Program Files\Java\jdk1.8.0_111\db
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\lzc\Desktop\Online_Shopping\ku
+数据库类加载程序已启动 - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Jul 19 16:40:39 CST 2021：正在关闭 Derby 引擎
+----------------------------------------------------------------
+Mon Jul 19 16:40:39 CST 2021:
+正在使用类加载程序 sun.misc.Launcher$AppClassLoader@6f94fa3e 关闭数据库目录 C:\Users\lzc\Desktop\Online_Shopping\ku\Spring 上的实例 a816c00e-017a-bd92-30ce-00000e664cd2
+----------------------------------------------------------------
